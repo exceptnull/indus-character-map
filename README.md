@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Indus Valley Script Character Map
 
 This project is a web-based character map for the Indus Valley Script, designed to make characters easily accessible and provide users with the ability to copy individual characters to their clipboard. The project includes both dark and light theme options, styled similarly to Slack, and is mobile-friendly.
