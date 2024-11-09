@@ -1,0 +1,156 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'IndusFont';
+    src: url('fonts/IndusFont.woff2') format('woff2'),
+         url('fonts/IndusFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General styling */
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  /* Theme Toggle Styling */
+  .theme-toggle {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #1D1E22; /* Slack's dark background */
+    color: #D1D2D3; /* Slack-inspired light text */
+  }
+  
+  body.dark-theme .character-box {
+    background-color: #2D2F33; /* Dark card background */
+    color: #FFFFFF;
+    border: 1px solid #3E4146;
+  }
+  
+  body.dark-theme .character-box small {
+    color: #A5A6A8;
+  }
+  
+  body.dark-theme .character-box:hover {
+    background-color: #3A3D42; /* Light hover effect */
+  }
+  
+  /* Light Theme */
+  body.light-theme {
+    background-color: #F4F5F7; /* Slack's light background */
+    color: #333;
+  }
+  
+  body.light-theme .character-box {
+    background-color: #FFFFFF;
+    color: #333;
+    border: 1px solid #DDD;
+  }
+  
+  body.light-theme .character-box small {
+    color: #777;
+  }
+  
+  body.light-theme .character-box:hover {
+    background-color: #EFEFEF;
+  }
+  
+  /* Character Box Styling */
+  .character-map {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .character-box {
+    font-family: 'IndusFont';
+    font-size: 1.6em;
+    padding: 10px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 50px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .character-box small {
+    font-size: 0.55em;
+    margin-top: 3px;
+  }
+  
+  /* Copied Feedback */
+  .character-box.copied {
+    background-color: #4CAF50; /* Green feedback for copied characters */
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+  }
+  
+  /* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #4BA3C7; /* Slack-like blue link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #357E9D; /* Slightly darker blue on hover */
+  }  
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .character-box {
+      font-size: 1.4em;
+      padding: 8px 4px;
+      height: 50px;
+      width: 45px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .theme-toggle {
+      font-size: 0.8em;
+    }
+  }
+  
