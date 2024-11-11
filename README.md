@@ -38,6 +38,7 @@ View the live demo here: [Indus Valley Script Character Map](https://exceptnull.
    - `style.css`: Contains the styling for both dark and light themes.
    - `script.js`: JavaScript for theme toggle and copy functionality.
    - `fonts/IndusFont.woff2` and `fonts/IndusFont.ttf`: Custom fonts for the Indus Valley Script characters.
+   - `html-gen.py`: Autogenerates `index.html`
 
 3. **Fonts**:
    - The font files are from the [Indus Valley Script Font Repository](https://github.com/decipher-indus/font).
