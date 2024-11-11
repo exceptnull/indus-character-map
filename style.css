@@ -9,7 +9,7 @@
   
   /* General styling */
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     margin: 0;
     padding: 20px;
     line-height: 1.6;
@@ -29,6 +29,10 @@
     margin: 0;
   }
   
+  small {
+    font-family: 'Inconsolata', sans-serif;
+  }
+
   /* Theme Toggle Styling */
   .theme-toggle {
     font-size: 0.9em;
@@ -87,7 +91,7 @@
   .character-box {
     font-family: 'IndusFont';
     font-size: 1.6em;
-    padding: 10px 5px;
+    padding: 16px 4px;
     text-align: center;
     display: flex;
     flex-direction: column;
